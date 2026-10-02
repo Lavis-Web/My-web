@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DEMON SLAYER | Kimetsu no Yaiba</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= PRELOADER ================= -->
+
+<div id="preloader">
+    <div class="loader-kanji">鬼</div>
+    <div class="loader-line"></div>
+    <p>LOADING KIMETSU NO YAIBA</p>
+</div>
+
+
+<!-- ================= BACKGROUND ================= -->
+
+<div id="particles"></div>
+<div id="sakura"></div>
+
+<div id="scrollProgress"></div>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="nav-logo">
+        <span class="logo-kanji">鬼</span>
+        <span>DEMON SLAYER</span>
+    </div>
+
+    <nav class="nav-links">
+        <a href="#home">HOME</a>
+        <a href="#characters">CHARACTERS</a>
+        <a href="#breathing">BREATHING</a>
+        <a href="#hashira">HASHIRA</a>
+        <a href="#demons">DEMONS</a>
+        <a href="#timeline">TIMELINE</a>
+    </nav>
+
+    <button id="themeButton" class="theme-button">☾</button>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <p class="hero-small">KIMETSU NO YAIBA</p>
+
+        <h1>
+            DEMON
+            <span>SLAYER</span>
+        </h1>
+
+        <p class="hero-japanese">鬼滅の刃</p>
+
+        <p class="hero-description">
+            A world of demons, swordsmen, breathing styles,
+            sacrifice and unbreakable resolve.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#characters" class="primary-button">
+                ENTER THE WORLD
+            </a>
+
+            <a href="#timeline" class="secondary-button">
+                STORY TIMELINE
+            </a>
+        </div>
+
+    </div>
+
+    <div class="hero-scroll">
+        <span></span>
+        SCROLL
+    </div>
+
+</section>
+
+
+<!-- ================= INTRO ================= -->
+
+<section class="section intro-section">
+
+    <div class="section-heading">
+        <span>01</span>
+        <div>
+            <p>THE WORLD</p>
+            <h2>KIMETSU NO YAIBA</h2>
+        </div>
+    </div>
+
+    <div class="intro-grid">
+
+        <div class="intro-text">
+
+            <p class="big-text">
+                In a world where demons lurk in the darkness,
+                humanity survives through courage, discipline
+                and the blade.
+            </p>
+
+            <p>
+                Tanjiro Kamado's journey begins after tragedy
+                changes his life forever. With Nezuko by his
+                side, he enters the Demon Slayer Corps and
+                encounters powerful swordsmen, Hashira and
+                demons unlike anything he has known.
+            </p>
+
+        </div>
+
+        <div class="intro-symbol">
+            <span>滅</span>
+            <p>DESTROY</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CHARACTERS ================= -->
+
+<section id="characters" class="section characters-section">
+
+    <div class="section-heading">
+        <span>02</span>
+        <div>
+            <p>THE WARRIORS</p>
+            <h2>CHARACTERS</h2>
+        </div>
+    </div>
+
+
+    <div class="character-controls">
+
+        <input
+            type="text"
+            id="characterSearch"
+            placeholder="Search character..."
+        >
+
+        <select id="characterFilter">
+
+            <option value="all">ALL</option>
+            <option value="slayer">DEMON SLAYER</option>
+            <option value="hashira">HASHIRA</option>
+            <option value="demon">DEMON</option>
+
+        </select>
+
+    </div>
+
+
+    <div id="characterGrid" class="character-grid"></div>
+
+</section>
+
+
+<!-- ================= BREATHING ================= -->
+
+<section id="breathing" class="section breathing-section">
+
+    <div class="section-heading">
+        <span>03</span>
+        <div>
+            <p>COMBAT TECHNIQUES</p>
+            <h2>BREATHING STYLES</h2>
+        </div>
+    </div>
+
+
+    <div class="breathing-grid">
+
+        <article class="breathing-card water">
+            <div class="breathing-number">01</div>
+            <div class="breathing-kanji">水</div>
+            <h3>WATER</h3>
+            <p>Fluid movements inspired by the flow of water.</p>
+            <span>水の呼吸</span>
+        </article>
+
+
+        <article class="breathing-card flame">
+            <div class="breathing-number">02</div>
+            <div class="breathing-kanji">炎</div>
+            <h3>FLAME</h3>
+            <p>A powerful style built around explosive attacks.</p>
+            <span>炎の呼吸</span>
+        </article>
+
+
+        <article class="breathing-card thunder">
+            <div class="breathing-number">03</div>
+            <div class="breathing-kanji">雷</div>
+            <h3>THUNDER</h3>
+            <p>Lightning-fast movements focused on speed.</p>
+            <span>雷の呼吸</span>
+        </article>
+
+
+        <article class="breathing-card wind">
+            <div class="breathing-number">04</div>
+            <div class="breathing-kanji">風</div>
+            <h3>WIND</h3>
+            <p>Wild and unpredictable movements.</p>
+            <span>風の呼吸</span>
+        </article>
+
+
+        <article class="breathing-card mist">
+            <div class="breathing-number">05</div>
+            <div class="breathing-kanji">霞</div>
+            <h3>MIST</h3>
+            <p>Deceptive movements that obscure the user's position.</p>
+            <span>霞の呼吸</span>
+        </article>
+
+
+        <article class="breathing-card love">
+            <div class="breathing-number">06</div>
+            <div class="breathing-kanji">恋</div>
+            <h3>LOVE</h3>
+            <p>Flexible movements created around extraordinary agility.</p>
+            <span>恋の呼吸</span>
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= HASHIRA ================= -->
+
+<section id="hashira" class="section hashira-section">
+
+    <div class="section-heading">
+        <span>04</span>
+        <div>
+            <p>THE PILLARS</p>
+            <h2>THE HASHIRA</h2>
+        </div>
+    </div>
+
+
+    <div class="hashira-grid">
+
+        <div class="hashira-card">
+            <span class="hashira-kanji">水</span>
+            <h3>GIYU TOMIOKA</h3>
+            <p>WATER HASHIRA</p>
+        </div>
+
+        <div class="hashira-card">
+            <span class="hashira-kanji">炎</span>
+            <h3>KYOJURO RENGOKU</h3>
+            <p>FLAME HASHIRA</p>
+        </div>
+
+        <div class="hashira-card">
+            <span class="hashira-kanji">音</span>
+            <h3>TENGEN UZUI</h3>
+            <p>SOUND HASHIRA</p>
+        </div>
+
+        <div class="hashira-card">
+            <span class="hashira-kanji">蟲</span>
+            <h3>SHINOBU KOCHO</h3>
+            <p>INSECT HASHIRA</p>
+        </div>
+
+        <div class="hashira-card">
+            <span class="hashira-kanji">霞</span>
+            <h3>MUICHIRO TOKITO</h3>
+            <p>MIST HASHIRA</p>
+        </div>
+
+        <div class="hashira-card">
+            <span class="hashira-kanji">風</span>
+            <h3>SANEMI SHINAZUGAWA</h3>
+            <p>WIND HASHIRA</p>
+        </div>
+
+        <div class="hashira-card">
+            <span class="hashira-kanji">恋</span>
+            <h3>MITSURI KANROJI</h3>
+            <p>LOVE HASHIRA</p>
+        </div>
+
+        <div class="hashira-card">
+            <span class="hashira-kanji">蛇</span>
+            <h3>OBANAI IGURO</h3>
+            <p>SERPENT HASHIRA</p>
+        </div>
+
+        <div class="hashira-card">
+            <span class="hashira-kanji">岩</span>
+            <h3>GYOMEI HIMEJIMA</h3>
+            <p>STONE HASHIRA</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= DEMONS ================= -->
+
+<section id="demons" class="section demons-section">
+
+    <div class="section-heading">
+        <span>05</span>
+        <div>
+            <p>THE NIGHT</p>
+            <h2>DEMONS</h2>
+        </div>
+    </div>
+
+
+    <div class="demon-grid">
+
+        <div class="demon-card">
+            <span>01</span>
+            <h3>MUZAN KIBUTSUJI</h3>
+            <p>THE FIRST DEMON</p>
+        </div>
+
+        <div class="demon-card">
+            <span>02</span>
+            <h3>AKAZA</h3>
+            <p>UPPER RANK THREE</p>
+        </div>
+
+        <div class="demon-card">
+            <span>03</span>
+            <h3>DAKI</h3>
+            <p>UPPER RANK SIX</p>
+        </div>
+
+        <div class="demon-card">
+            <span>04</span>
+            <h3>GYUTARO</h3>
+            <p>UPPER RANK SIX</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TIMELINE ================= -->
+
+<section id="timeline" class="section timeline-section">
+
+    <div class="section-heading">
+        <span>06</span>
+        <div>
+            <p>THE JOURNEY</p>
+            <h2>STORY TIMELINE</h2>
+        </div>
+    </div>
+
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <span>01</span>
+                <h3>FINAL SELECTION</h3>
+                <p>
+                    Tanjiro enters the Demon Slayer Corps
+                    after training under Sakonji Urokodaki.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <span>02</span>
+                <h3>NATAGUMO MOUNTAIN</h3>
+                <p>
+                    Tanjiro and his companions face demons
+                    connected to a powerful family.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <span>03</span>
+                <h3>MUGEN TRAIN</h3>
+                <p>
+                    Tanjiro and his companions join Flame
+                    Hashira Kyojuro Rengoku aboard the train.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <span>04</span>
+                <h3>ENTERTAINMENT DISTRICT</h3>
+                <p>
+                    Tengen Uzui leads the group into a dangerous
+                    mission beneath the bright lights of the district.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <span>05</span>
+                <h3>SWORDSMITH VILLAGE</h3>
+                <p>
+                    Tanjiro travels to the hidden village where
+                    the Demon Slayer Corps receives its blades.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <span>06</span>
+                <h3>HASHIRA TRAINING</h3>
+                <p>
+                    The Demon Slayer Corps prepares for the
+                    confrontation that lies ahead.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SPOILER ================= -->
+
+<section class="spoiler-section">
+
+    <div class="spoiler-inner">
+
+        <p>⚠ SPOILER WARNING</p>
+
+        <h2>
+            THE NIGHT
+            <br>
+            IS NOT OVER.
+        </h2>
+
+        <button id="spoilerButton">
+            REVEAL
+        </button>
+
+        <p id="spoilerText">
+            The story moves toward its final confrontation
+            between humanity and the demons.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        鬼滅の刃
+    </div>
+
+    <p>
+        DEMON SLAYER — KIMETSU NO YAIBA
+    </p>
+
+    <small>
+        Fan-made educational website project.
+    </small>
+
+</footer>
+
+
+<!-- ================= CHARACTER MODAL ================= -->
+
+<div id="characterModal" class="modal">
+
+    <div class="modal-box">
+
+        <button id="modalClose" class="modal-close">
+            ×
+        </button>
+
+        <div id="modalImageBox" class="modal-image-box"></div>
+
+        <div class="modal-info">
+
+            <p id="modalRole"></p>
+
+            <h2 id="modalName"></h2>
+
+            <span id="modalTitle"></span>
+
+            <p id="modalDescription"></p>
+
+            <div class="modal-style">
+                <span>STYLE</span>
+                <strong id="modalStyle"></strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
